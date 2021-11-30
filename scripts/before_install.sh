@@ -11,6 +11,7 @@ nvm use 16.8.0
 DIR="/home/ec2-user/aws-2048-pipeline"
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
+  rm -r /home/ec2-user/aws-2048-pipeline
 else
   echo "Creating ${DIR} directory"
   mkdir ${DIR}
