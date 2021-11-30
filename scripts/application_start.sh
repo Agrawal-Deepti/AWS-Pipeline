@@ -16,3 +16,5 @@ npm install react-scripts --save
 
 #start our node app in the background
 npm start > app.out.log 2> app.err.log < /dev/null & 
+
+#end script
