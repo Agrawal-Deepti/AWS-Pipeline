@@ -10,16 +10,7 @@ cd /home/ec2-user/aws-2048-pipeline
 export NVM_DIR="$HOME/.nvm"	
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # loads nvm	
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # loads nvm bash_completion (node is in path now)
-#remove existing deployment 
-if [[ -d /home/ec2-user/aws-2048-pipeline/node_modules ]]
-then
-	rm -r /home/ec2-user/aws-2048-pipeline/node_modules
-fi    
 
-if [[ -f /home/ec2-user/aws-2048-pipeline/package-lock.json ]]
-then
-    rm -r /home/ec2-user/aws-2048-pipeline/package-lock.json
-fi
 #install node modules
 npm install react-scripts --save
 

@@ -15,3 +15,12 @@ else
   echo "Creating ${DIR} directory"
   mkdir ${DIR}
 fi
+
+#remove existing deployment 
+if [ -d /home/ec2-user/aws-2048-pipeline/node_modules ]; then
+  rm -r /home/ec2-user/aws-2048-pipeline/node_modules
+fi    
+
+if [ -f /home/ec2-user/aws-2048-pipeline/package-lock.json ]; then
+  rm -r /home/ec2-user/aws-2048-pipeline/package-lock.json
+fi
