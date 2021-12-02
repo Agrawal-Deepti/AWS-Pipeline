@@ -12,9 +12,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # loads nvm bash_completion (node is in path now)
 
 #install node modules
-npm install react-scripts --save
+sudo npm install react-scripts --save
 
 #start our node app in the background
-npm start > app.out.log 2> app.err.log < /dev/null & 
+sudo npm start > app.out.log 2> app.err.log < /dev/null & 
 
 #end script
